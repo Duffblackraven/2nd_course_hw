@@ -52,6 +52,7 @@ a {
         border-radius: 30px;
         width: 234px;
         height: 48px;
+        font-family: "Montserrat", sans-serif;
         color: #FFF;
         font-size: 18px;
         font-style: normal;
@@ -64,47 +65,36 @@ a {
     }
   }
 .bottom {
-    padding-top: 128px;
-    padding-bottom: 128px;
-    background: #000915;
+    background-color: #000915;
 
-    &__product {
-    display: flex;
-    gap: 32px;
-}
     &__content {
-   
-        &_left {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        padding-top: 128px;
+        padding-bottom: 128px;
+
+        &_item {
+            position: relative;
+            max-width: 379px;
             height: 300px;
-            width: 379px;
-            border-radius: 20px;
-            background-image: url(./game_1.jpg);
-            background-repeat: no-repeat;
         }
-        &_center {
-            height: 300px;
-            width: 379px;
+        &_img {
             border-radius: 20px;
-            background-image: url(./game_2.jpg);
+            width: 100%;
             background-repeat: no-repeat;
+            background-position: center;
         }
-        &_right {
-            height: 300px;
-            width: 379px;
-            border-radius: 20px;
-            background-image: url(./game_3.jpg);
-            background-repeat: no-repeat;
+        &_text {
+            position: absolute;
+            left: 32px;
+            top: 236px;
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 32px;
         }
-    }
-    &__text {
-        position: relative;
-        left: 32px;
-        bottom: 32px;
-        top: 236px;
-        color: #FFF;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 32px;
+ 
     }
 }
