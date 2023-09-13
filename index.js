@@ -70,6 +70,75 @@ let info=prompt (`Какую информацию хотите узнать о �
 alert (user[info])
 
 // Task 10
-let userName=prompt (`Как ва зовут?`);
+let userName=prompt (`Как вас зовут?`);
 alert (`Привет, ${userName} !`)
 
+// Hw3 
+//Task 1
+let password=`Пароль`;
+let enterPassword= prompt (`Введите пароль`);
+enterPassword=enterPassword.toLowerCase ();
+if (enterPassword===`password`) {alert (`Пароль введен верно`);
+} else {alert (`Пароль введен неправильно`);}
+
+// Task 2 
+c=3;
+if (c>=0 && c<=10) {alert (`Верно`);   
+} else {alert (`Неверно`);    
+}
+
+// Task 3
+let f = 50;
+let g = 120;
+if (f>100 || g>100) {
+	alert('Верно');
+} else {alert (`Неверно`);
+}
+
+//Task 4
+a='2';
+b='3';
+alert (Number(a) + Number(b))
+
+// Task 5
+let monthNumber=String(prompt(`Номер месяца`));
+switch (monthNumber) {
+    case `1`:
+        alert(`Зима`);    
+    break;
+    case `2`:
+        alert(`Зима`);
+    break;
+    case `3`:
+        alert(`Весна`);
+    break;
+    case `4`:
+        alert(`Весна`);
+    break;
+    case `5`:
+        alert(`Весна`);
+    break;
+    case `6`:
+        alert(`Лето`);
+    break;
+    case `7`:
+        alert(`Лето`);
+    break;
+    case `8`:
+        alert(`Лето`);
+    break;
+    case `9`:
+        alert(`Осень`);
+    break;
+    case `10`:
+        alert(`Осень`);
+    break;
+    case `11`:
+        alert(`Осень`);
+    break;
+    case `12`:
+        alert(`Зима`);
+    break;
+    default: (alert(`Попробуй снова`))
+        break;
+}
