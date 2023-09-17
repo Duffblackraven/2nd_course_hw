@@ -159,3 +159,16 @@ for (const key in object) {
     }
 
 // Task 5
+let n=1000
+let minNum=0
+for (; n>=50; n/=2){
+    minNum++;
+}
+console.log (n);
+console.log (minNum)
+
+// Task 6
+let dayNum=1;
+do {console.log (`Сегодня пятница, ${dayNum}-е число. Необходимо подготовить отчет.`);
+dayNum+=7;   
+} while (dayNum<=31);
