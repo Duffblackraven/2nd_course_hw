@@ -133,14 +133,29 @@ let i=1;
 while (i<3) {alert (`Привет`); 
 i++;
 }
+
  //Task 2
  i=1;
  while (i<=5) {console.log (i)
     i++;   
  }
+
  // Task 3
 i = 7;
 do {
   console.log(i);
 	i++;
 } while (i <= 22);
+
+// Task 4
+const object= {
+'Коля':'200',
+'Вася':'300',
+'Петя':'400'
+};
+for (const key in object) {
+        const element = object[key];
+        console.log (`${key} - зарплата ${element} долларов`);    
+    }
+
+// Task 5
