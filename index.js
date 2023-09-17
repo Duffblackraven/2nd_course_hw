@@ -126,3 +126,21 @@ switch (monthNumber) {
     default: (alert(`Попробуй снова`))
         break;
 }
+
+// Hw4 
+//Task 1
+let i=1;
+while (i<3) {alert (`Привет`); 
+i++;
+}
+ //Task 2
+ i=1;
+ while (i<=5) {console.log (i)
+    i++;   
+ }
+ // Task 3
+i = 7;
+do {
+  console.log(i);
+	i++;
+} while (i <= 22);
