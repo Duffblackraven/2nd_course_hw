@@ -72,7 +72,7 @@ delete user [`City of residence`];
 
 // Task 9.4
 let info = prompt (`Какую информацию хотите узнать о пользователе?`)
-alert (user[info])
+console.log (user[info]);
 
 // Task 10
 let userName = prompt(`Как вас зовут?`);
@@ -286,3 +286,24 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
+
+// Task 8
+const monthGame = () => {
+    let monthGameAnswer = Number (prompt(`Введите номер месяца`));
+
+    if (monthGameAnswer === 12 || monthGameAnswer === 1 || monthGameAnswer === 2) {
+        alert(`Зима`);
+
+    } else if (monthGameAnswer === 3 || monthGameAnswer === 4 || monthGameAnswer === 5) {
+        alert(`Весна`);
+
+    } else if (monthGameAnswer === 6 || monthGameAnswer === 7 || monthGameAnswer === 8) {
+        alert(`Лето`);
+
+    } else if (monthGameAnswer === 9 || monthGameAnswer === 10 || monthGameAnswer === 11) {
+        alert(`Осень`);
+
+    } else {
+        alert (`Введённый параметр является неверным`);
+    }
+}

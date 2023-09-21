@@ -209,9 +209,9 @@ a {
     line-height: 22px;
   }
   .footer__img {
-    padding-top: 64px;
     display: flex;
     flex-direction: column;
     width: 344px;
+    padding-top: 64px;
   }
 }/*# sourceMappingURL=style.css.map */
