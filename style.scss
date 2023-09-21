@@ -60,7 +60,7 @@ a {
         line-height: normal;
 
         &:hover {
-            color: #000915;
+            background: #EB443F;
         }
     }
   }
@@ -142,6 +142,10 @@ a {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            
+            &:hover {
+                background: #EB443F;
+            }
         }
     }
 }
