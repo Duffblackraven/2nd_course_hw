@@ -172,3 +172,107 @@ let dayNum=1;
 do {console.log (`Сегодня пятница, ${dayNum}-е число. Необходимо подготовить отчет.`);
 dayNum+=7;   
 } while (dayNum<=31);
+
+//Hw5
+// Task 1
+function minNumber(a, b) {
+    if (a >= b) {
+        console.log(`Наименьшее из чисел ${b}`);
+    } else {
+        console.log(`Наименьшее из чисел ${a}`);
+    }
+}
+minNumber (2, 6);
+
+// Task 2
+function evenNumber(a) {
+    if (a % 2 == 0) {
+        console.log(`Число ${a} четное`);
+    } else {
+        console.log(`Число ${a} нечетное`);
+    }
+}
+evenNumber (9);
+
+// Task 3.1
+const square = (a) => Math.pow (a, 2);
+square (5);
+
+// Task 3.2
+const math = (b) => Math.sqrt(b);
+math (9);
+
+// Task 4
+let userAge = prompt(`Сколько Вам лет?`);
+let message;
+
+if (userAge <= 12) {
+    message = function () {
+        console.log(`Привет, друг!`);
+        } 
+
+} else if (userAge < 0) {
+    message = function () {
+        console.log(`Вы ввели неправильное значение`);
+        }   
+
+} else {
+    message = function () {
+        console.log(`Добро пожаловать!`);
+        }
+}
+
+message();
+
+// Task 5
+function calc (a, b) {
+    a = prompt(`Введите первое число`);
+    b = prompt(`Введите второе число`)
+    
+    if (isNaN(a) || isNaN (b)) { 
+        console.log(`Одно или оба значения не являются числом`); 
+
+    } else {
+        return a * b 
+    } 
+}
+
+calc ();
+
+// Task 6
+function userNumber() {
+    let  userNumber = prompt(`Введите число`);
+
+    if (!isNaN(userNumber)) {
+        return console.log(`${userNumber} в кубе равняется ${userNumber**3}`); 
+
+    } else {
+        return console.log(`Переданный параметр не является числом`);
+    }
+}
+
+userNumber ();
+
+// Task 7
+function getRectangleArea() {
+    return this.radius ** 2 * Math.PI  
+}
+function getRectanglePerimeter() {
+    return this.radius * 2 * Math.PI
+}
+const circle1 = {
+    radius:7,
+
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+}
+const circle2 = {
+    radius:5,
+
+    getArea: getRectangleArea,
+    getPerimeter: getRectanglePerimeter,
+}
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
