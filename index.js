@@ -288,7 +288,7 @@ console.log(circle2.getPerimeter());
 
 // Task 8
 const monthGame = () => {
-    let monthGameAnswer = Number (prompt(`Введите номер месяца`));
+    let monthGameAnswer = prompt(`Введите номер месяца`);
 
     if (monthGameAnswer === 12 || monthGameAnswer === 1 || monthGameAnswer === 2) {
         alert(`Зима`);
