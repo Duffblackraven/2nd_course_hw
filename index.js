@@ -204,41 +204,41 @@ function evenNumber(a) {
 }
 evenNumber (9);
 
-// Task 3
-function square(t) {
-    let squareNumber = t ** 2;
-    console.log(squareNumber);
-    return squareNumber
+// Task 3.1
+const squareNumber = (t) => {
+    console.log(t ** 2);
 }
-square (5);
+squareNumber (6);
+
+// Task 3.2
+const numberSquare = (f) => {
+    return f ** 2;
+}
+numberSquare (2);
 
 // Task 4
-let userAge = Number (prompt(`Сколько Вам лет?`));
+function message () {
+    userAge = prompt (`Сколько Вам лет?`);
 
-if (userAge <= 12) {
-    function message() {
-        console.log(`Привет, друг!`);
-        } 
+    if (userAge >= 0 && userAge <= 12) {
+            console.log(`Привет, друг!`);
 
-} else if (userAge < 0) {
-    function message() {
-        console.log(`Вы ввели неправильное значение`);
-        }   
+    }  else if (userAge < 0) {
+            console.log(`Вы ввели неправильное значение`);
 
-} else {
-    function message() {
-        console.log(`Добро пожаловать!`);
-        }
+    }  else {
+            console.log(`Добро пожаловать!`);
+    }
 }
+message ();
 
-message();
 
 // Task 5
 function calc (a, b) {
-    a = Number (prompt(`Введите первое число`));
-    b = Number (prompt(`Введите второе число`));
+    a = prompt (`Введите первое число`);
+    b = prompt (`Введите второе число`);
     
-    if (isNaN(a) || isNaN (b)) { 
+    if (isNaN(a) || isNaN(b)) { 
         console.log(`Одно или оба значения не являются числом`); 
 
     } else {
@@ -250,7 +250,7 @@ calc ();
 
 // Task 6
 function userNumber() {
-    let  userNumber = Number (prompt(`Введите число`));
+    let  userNumber = prompt(`Введите число`);
 
     if (!isNaN(userNumber)) {
         return console.log(`${userNumber} в кубе равняется ${userNumber**3}`); 
