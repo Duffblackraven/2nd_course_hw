@@ -39,4 +39,31 @@
   .top__button {
     margin-top: 32px;
   }
+  .footer__content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__content_heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .footer__content_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .footer__img {
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    padding-top: 64px;
+  }
 }/*# sourceMappingURL=mobile.css.map */
