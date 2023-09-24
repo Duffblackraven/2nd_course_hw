@@ -306,3 +306,98 @@ const monthGame = () => {
         alert (`Введённый параметр является неверным`);
     }
 }
+
+// Hw 6
+// Task 1
+const numbs = [1, 5, 4, 10, 0, 3];
+for (let n = 0; n < numbs.length; n++) {
+    console.log(numbs[n]);
+    if (numbs [n] === 10) 
+    break;
+}
+
+// Task 2
+const numbsOf = [1, 5, 4, 10, 0, 3];
+console.log (numbsOf.indexOf (4));
+
+// Task 3
+const numbsJoin = [1, 3, 5, 10, 20];
+console.log(numbsJoin.join(' '));
+
+// Task 4
+const arr = [];
+
+for (let i = 0; i < 3; i++) {
+    arr [i] = [];
+
+    for (let j = 1; j < 4; j++)
+    {
+        arr[i].push(1);
+    }    
+}
+console.log(arr);
+
+// Task 5
+const array = [1, 1, 1];
+array.push (2, 2, 2);
+console.log(array);
+
+// Task 6
+const sort = [9, 8, 7, 'a', 6, 5];
+sort.sort ();
+sort.pop ();
+console.log(sort);
+
+// Task 7
+const userArray = [9, 8, 7, 6, 5];
+let userAnswer = Number (prompt (`Угадайте задуманное число`));
+for (let i of userArray) {
+    if (userAnswer === i) { 
+        alert (`Угадал`);
+        break;   
+    } else {
+        alert (`Не угадал`);
+    }  
+}
+
+// Task 8
+let letters = 'abcdef';
+let arrayLetters = letters.split ('');
+arrayLetters.reverse();
+arrayLetters = arrayLetters.join ('');
+console.log(arrayLetters);
+
+// Task 9
+const arrayNumbers = [[1, 2, 3,],[4, 5, 6]];
+const arrayNumbersResult =[].concat(arrayNumbers[0], arrayNumbers[1]);
+console.log(arrayNumbersResult);
+
+// Task 10
+const numbersArray = [3, 4, 5, 6, 7];
+let sumNumbersArray = 0;
+for (let i = 1; i < numbersArray.length; i++) {
+    sumNumbersArray = numbersArray[i] + numbersArray [i-1];
+    console.log(sumNumbersArray);
+}
+
+// Task 11
+const squareNum = [2, 4, 7, 9]
+const map = (squareNum) => {
+    return squareNum.map(s => s**2)
+}
+console.log(map(squareNum));
+
+// Task 12
+const arrayLet = ['как', 'говорят', 'американцы', 'кто', 'много', 'знает', 'тот', 'пули', 'глотает'];
+
+function lettersFunction(arrayLet) {
+    return arrayLet.map (let => let.length)   
+}
+console.log(lettersFunction(arrayLet));
+
+// Task 13
+function filterPositive(array) {
+    return array.filter(number => number < 0)
+  }
+  filterPositive([-1, 0, 5, -10, 56]);
+  filterPositive([-25, 25, 0, -1000, -2]);
