@@ -5,34 +5,34 @@ a = 20;
 console.log (a);
 
 // Task 2
-let yearRelease = 2007;
+const yearRelease = 2007;
 console.log (`Year release first iPhone: ${yearRelease}`);
 
 // Task 3
-let nameCreator = String (`Брендан Эйх`);
+const nameCreator = String (`Брендан Эйх`);
 console.log (`Имя создателя языка JavaScript: ${nameCreator}`);
 
 // Task 4
 let b = 10;
 let c = 2;
-let sum = b+c;
-console.log (`Сумма 10 и 2= ${sum}`)
-let differens = b-c;
-console.log (`Разность 10 и 2= ${differens}`);
-let multiplication = b*c;
-console.log (`Произведение 10 и 2= ${multiplication}`);
-let division = b/c;
-console.log (`Частное 10 и 2= ${division}`);
+const sum = b+c;
+console.log (`Сумма 10 и 2 = ${sum}`)
+const differens = b-c;
+console.log (`Разность 10 и 2 = ${differens}`);
+const multiplication = b*c;
+console.log (`Произведение 10 и 2 = ${multiplication}`);
+const division = b/c;
+console.log (`Частное 10 и 2 = ${division}`);
 
 // Task 5
-let result = 2**5;
-console.log (`Возведение 2 в 5-ю степень= ${result}`);
+const result = 2**5;
+console.log (`Возведение 2 в 5-ю степень = ${result}`);
 
 // Task 6
 let d = 9;
 let e = 2;
-let divide = d%e;
-console.log (`Остаток от деления 9 и 2= ${divide}`)
+const divide = d%e;
+console.log (`Остаток от деления 9 и 2 = ${divide}`)
 
 // Task 7
 let num = 1;
@@ -80,15 +80,15 @@ alert (`Привет, ${userName} !`)
 
 // Hw3 
 //Task 1
-let password =`Пароль`;
-let enterPassword = prompt(`Введите пароль`);
+let password = `Пароль`;
+let enterPassword = prompt (`Введите пароль`);
 enterPassword = enterPassword.toLowerCase ();
 
 if (enterPassword ===`password`) {
-    alert (`Пароль введен верно`);
+    console.log (`Пароль введен верно`);
 
 } else {
-    alert (`Пароль введен неправильно`);}
+    console.log (`Пароль введен неправильно`);}
 
 // Task 2 
 c = 3;
@@ -139,7 +139,7 @@ switch (monthNumber) {
 // Hw4 
 //Task 1
 let i = 1;
-while (i < 3) {alert (`Привет`); 
+while (i < 3) {console.log (`Привет`); 
 i++;
 }
 
@@ -350,7 +350,7 @@ console.log(sort);
 
 // Task 7
 const userArray = [9, 8, 7, 6, 5];
-let userAnswer = Number (prompt (`Угадайте задуманное число`));
+const userAnswer = Number (prompt (`Угадайте задуманное число`));
 for (let i of userArray) {
     if (userAnswer === i) { 
         alert (`Угадал`);
@@ -361,11 +361,8 @@ for (let i of userArray) {
 }
 
 // Task 8
-let letters = 'abcdef';
-let arrayLetters = letters.split ('');
-arrayLetters.reverse();
-arrayLetters = arrayLetters.join ('');
-console.log(arrayLetters);
+const letters = 'abcdef';
+console.log(letters.split('').reverse().join(''));
 
 // Task 9
 const arrayNumbers = [[1, 2, 3,],[4, 5, 6]];
