@@ -11,6 +11,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-top: 238px;
+  }
+  .top {
+    height: 735px;
   }
   .top__content {
     display: flex;

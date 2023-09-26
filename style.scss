@@ -45,14 +45,16 @@ a {
         }
     }
     &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 57px;
-        background: #9C0332;;
+        background: #9C0332;
         border: 1px;
         box-sizing: border-box;
         border-radius: 30px;
         width: 234px;
         height: 48px;
-        font-family: "Montserrat", sans-serif;
         color: #FFF;
         font-size: 18px;
         font-style: normal;

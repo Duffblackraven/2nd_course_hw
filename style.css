@@ -48,6 +48,9 @@ a {
   font-weight: 700;
 }
 .top__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 57px;
   background: #9C0332;
   border: 1px;
@@ -55,7 +58,6 @@ a {
   border-radius: 30px;
   width: 234px;
   height: 48px;
-  font-family: "Montserrat", sans-serif;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
@@ -205,6 +207,10 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-top: 238px;
+  }
+  .top {
+    height: 735px;
   }
   .top__content {
     display: flex;
