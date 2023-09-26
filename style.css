@@ -145,6 +145,52 @@ a {
 .footer__content_btn:hover {
   background: #EB443F;
 }
+.footer__game {
+  background-color: #000915;
+  padding-top: 239px;
+  padding-bottom: 239px;
+}
+.footer__game_content {
+  display: flex;
+  width: 588px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.footer__gameProduct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom {
+  height: 800px;
+  background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(./bottom_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer__bottom_content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  padding-top: 276px;
+}
+
+.bottom__text {
+  background-color: #000915;
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 @media (max-width: 767px) {
   .center {
@@ -187,6 +233,10 @@ a {
   .top__button {
     margin-top: 32px;
   }
+  .footer {
+    padding-bottom: 85px;
+    padding-top: 51px;
+  }
   .footer__content {
     display: flex;
     align-items: center;
@@ -213,5 +263,22 @@ a {
     flex-direction: column;
     width: 344px;
     padding-top: 64px;
+  }
+  .footer__game {
+    padding-top: 51px;
+    padding-bottom: 90px;
+  }
+  .footer__game_content {
+    align-items: center;
+    text-align: center;
+    width: 343px;
+  }
+  .footer__gameProduct {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .footer__bottom_content {
+    padding-top: 51px;
   }
 }/*# sourceMappingURL=style.css.map */
