@@ -288,7 +288,7 @@ console.log(circle2.getPerimeter());
 
 // Task 8
 const monthGame = () => {
-    let monthGameAnswer = prompt(`Введите номер месяца`);
+    let monthGameAnswer = Number (prompt(`Введите номер месяца`));
 
     if (monthGameAnswer === 12 || monthGameAnswer === 1 || monthGameAnswer === 2) {
         alert(`Зима`);
@@ -398,3 +398,115 @@ function filterPositive(array) {
   }
   filterPositive([-1, 0, 5, -10, 56]);
   filterPositive([-25, 25, 0, -1000, -2]);
+
+// Hw7
+// Task 1
+const js = `js`;
+console.log(js.toUpperCase());
+
+// Task 2
+function searchStart(array, searchKey) {
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let key = array[i].toLocaleLowerCase();
+        if (key.startsWith(searchKey.toLocaleLowerCase())) {
+            newArray.push(key)
+        }
+    }
+    return newArray;
+}
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'));
+
+// Task 3
+console.log (Math.floor(32.58884));
+console.log (Math.ceil (32.58884));
+console.log (Math.round (32.58884));
+
+// Task 4
+const minN = Math.min (52, 53, 49, 77, 21, 32);
+  console.log(minN);
+const maxN = Math.max (52, 53, 49, 77, 21, 32);
+  console.log(maxN);
+
+// Task 5
+function randomNumber (min, max) {
+    return Math.round (Math.random() * (max - min) + min); 
+  }
+ randomNumber(1, 10);
+
+// Task 6
+const randomInteger = (min, max) => {
+    return Math.round (Math.random() * (max - min) + min);
+}
+const getRandomArrNumbers = (userNum) => {
+    const array = [];
+    for (let i = 0;array.length < Math.round(userNum / 2);i++) {
+        array.push (randomInteger(0, userNum));
+    }
+    console.log(array);
+}
+getRandomArrNumbers(12);
+
+// Task 7
+function randomNum (a, b) {
+    if (a > b) {
+        return Math.round (Math.random() * (a - b) + b);
+    } else {
+        return Math.round (Math.random() * (b - a) + a);
+    }
+  }
+randomNum(4, 8);
+
+// Task 8
+let currentDate = new Date();
+console.log(currentDate);
+
+// Task 9
+currentDate = new Date ();
+console.log(`Дата сейчас ${currentDate}`);
+currentDate.setDate (currentDate.getDate() + 73);
+console.log(`Дата через 73 дня ${currentDate}`);
+
+// Task 10
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let dateNow = new Date(); 
+
+let fullDate = `${dateNow.getDate()} ${months[dateNow.getMonth()]} ${dateNow.getFullYear()} - это ${days[dateNow.getDay()]}`;
+
+let hour = dateNow.getHours(); 
+let minute = dateNow.getMinutes();
+let second = dateNow.getSeconds();
+
+console.log(fullDate); 
+
+if (minute < 10) {
+ minute = "0" + minute;
+}
+if (second < 10) {
+ second = "0" + second;
+}
+console.log(`Время ${hour}:${minute}:${second} `);
+
+// Task 11
+function memoryGame() {
+    const gameArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    gameArr.sort(() => Math.random() - 0.5);
+    alert (gameArr);
+    const firstEl = prompt (`Какой был первый элемент?`);
+    const lastEl = prompt (`Какой был последний элемент?`);
+    if (gameArr[0].toLocaleLowerCase() === firstEl.toLocaleLowerCase() && gameArr[6].toLocaleLowerCase() === lastEl.toLocaleLowerCase()) {
+        alert(`Да ты хорош, мужик, хорош`);
+
+    } else if (gameArr[0].toLocaleLowerCase() !== firstEl.toLocaleLowerCase() && gameArr[6].toLocaleLowerCase() !== lastEl.toLocaleLowerCase()) {
+        alert(`Давай по новой, Миша, всё не то`);
+    } else {
+        alert (`Ты был близок. Ну ничего страшного`)
+    } 
+}
+memoryGame();
+

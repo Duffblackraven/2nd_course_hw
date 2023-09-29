@@ -11,37 +11,44 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        padding-top: 238px;
     }
-    .top__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .top {
+        height: 735px;
 
-    }
-    .top__text {
-        width: 343px;
-        text-align: center;
-
-        &_tiny {
-            color: #FFF;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__text {
+            width: 343px;
             text-align: center;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 22px;
+            &_tiny {
+                color: #FFF;
+                text-align: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 22px;
+            }
+            &_wide {
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+            }
         }
-        &_wide {
-            color: #FFF;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 22px;
+        &__button {
+            margin-top: 32px; 
         }
     }
-    .top__button{
-        margin-top: 32px;
-    }
+
     .footer {
+        padding-bottom: 85px;
+        padding-top: 51px;
+
         &__content {
             display: flex;
             align-items: center;
@@ -70,6 +77,25 @@
             flex-direction: column;
             width: 344px;
             padding-top: 64px;
+        }
+        &__game {
+            padding-top: 51px;
+            padding-bottom: 90px;
+            &_content {
+                align-items: center;
+                text-align: center;
+                width: 343px;
+            }
+        }
+        &__gameProduct {
+            display: flex;
+            flex-direction: column-reverse;
+            align-content: center;
+        }
+        &__bottom {
+            &_content {
+                padding-top: 51px;
+            }
         }
     }
 }

@@ -11,6 +11,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-top: 238px;
+  }
+  .top {
+    height: 735px;
   }
   .top__content {
     display: flex;
@@ -39,6 +43,10 @@
   .top__button {
     margin-top: 32px;
   }
+  .footer {
+    padding-bottom: 85px;
+    padding-top: 51px;
+  }
   .footer__content {
     display: flex;
     align-items: center;
@@ -65,5 +73,22 @@
     flex-direction: column;
     width: 344px;
     padding-top: 64px;
+  }
+  .footer__game {
+    padding-top: 51px;
+    padding-bottom: 90px;
+  }
+  .footer__game_content {
+    align-items: center;
+    text-align: center;
+    width: 343px;
+  }
+  .footer__gameProduct {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  .footer__bottom_content {
+    padding-top: 51px;
   }
 }/*# sourceMappingURL=mobile.css.map */
